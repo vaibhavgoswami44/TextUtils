@@ -1,0 +1,43 @@
+*{
+    margin: 0;padding: 0;
+}
+
+.classOne {
+    filter: invert(1);
+}
+
+.classTwo {
+    filter: invert(0);
+}
+
+.navbar {
+    top: 0;
+}
+.alertPoi{
+    margin-top: 5vh;
+}
+.mDiv{
+    min-height: 100vh;
+    height: auto;
+}
+::placeholder{
+    color: black;
+}
+textarea{
+    padding: 5px;
+}
+
+@media only screen and (max-width: 573px) {
+    .homeDiv{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .dark-button {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
