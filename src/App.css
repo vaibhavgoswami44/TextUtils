@@ -1,5 +1,6 @@
-*{
-    margin: 0;padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .classOne {
@@ -10,29 +11,22 @@
     filter: invert(0);
 }
 
-.navbar {
-    top: 0;
-}
-.alertPoi{
-    margin-top: 5vh;
-}
-.mDiv{
+
+.mDiv {
     min-height: 100vh;
     height: auto;
 }
-::placeholder{
-    color: black;
-}
-textarea{
+
+textarea {
     padding: 5px;
 }
 
-@media only screen and (max-width: 573px) {
-    .homeDiv{
-        width: 80%;
-    }
-
+.form-check-input {
+    margin-top: 0.55em;
+    margin-right: 2px;
 }
+
+
 
 @media only screen and (min-width: 992px) {
     .dark-button {

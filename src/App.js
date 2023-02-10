@@ -98,10 +98,14 @@ function App() {
     showAlert("Text Clered", "success")
   }
 
+
+
   return (
-    <div className={`mDiv`} style={{ background: mode === 'light' ? 'white' : 'rgb(80, 82, 206)' }} >
-      <Navbar btnClass={btnClass} mode={mode} textMode={textMode} handleMode={handleMode} modeText={modeText} />
-      <div className='alertPoi' style={{ height: '10vh', width: '100%' }} >  <Alert alert={alert} /> </div>
+    <div className={`mDiv`} style={{ background: mode === 'light' ? 'white' : 'rgb(11 12 68)' }} >
+      <div className='' style={{height:'100px'}}>
+        <Navbar btnClass={btnClass} mode={mode} textMode={textMode} handleMode={handleMode} modeText={modeText} />
+        <Alert alert={alert} />
+      </div>
       <Routes>
         <Route path='/' element={<Home mode={mode} textMode={textMode} text={text} handleText={handleText} handleUpperCase={handleUpperCase} handleLowerCase={handleLowerCase} handleClearText={handleClearText} handleCopy={handleCopy} handleExtraSpaces={handleExtraSpaces} />} />
         <Route path='/About' element={<About mode={mode} textMode={textMode} />} />

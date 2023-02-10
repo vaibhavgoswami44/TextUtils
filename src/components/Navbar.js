@@ -5,7 +5,7 @@ import '../App.css';
 const Navbar = (props) => {
     return (
         <>
-            <nav className={`navbar mt-0 shadow-lg position-fixed navbar-expand-lg bg-${props.mode === 'light' ? 'light' : 'dark'} `} style={{ width: '100%' }}>
+            <nav className={`navbar fixed-top  sticky-top navbar-expand-lg bg-${props.mode === 'light' ? 'light' : 'dark'} `} style={{ width: '100%' }}>
                 <div className="container-fluid">
                     <Link className={`navbar-brand text-${props.textMode} `} to='/'>TextUtils</Link>
                     <button className={` ${props.btnClass} navbar-toggler `} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
